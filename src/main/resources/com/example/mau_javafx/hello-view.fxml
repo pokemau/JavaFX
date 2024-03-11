@@ -11,22 +11,22 @@
           <padding>
               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
           </padding>
-         <Label text="Welcome">
+         <Label text="Welcome" textFill="#eaff4e">
             <font>
-               <Font name="System Bold" size="24.0" />
+               <Font name="System Bold" size="35.0" />
             </font>
          </Label>
          <HBox alignment="CENTER" prefWidth="200.0" VBox.vgrow="NEVER">
             <children>
 
-                <Label fx:id="welcomeText" alignment="CENTER" text="User name: " textAlignment="CENTER" HBox.hgrow="ALWAYS" />
-               <TextField />
+                <Label fx:id="welcomeText" alignment="CENTER" text="User name: " textAlignment="CENTER" textFill="#eaff4e" HBox.hgrow="ALWAYS" />
+               <TextField fx:id="txtUserName" />
             </children>
          </HBox>
          <HBox alignment="CENTER" layoutX="30.0" layoutY="85.0" prefWidth="200.0">
             <children>
-               <Label fx:id="welcomeText2" alignment="CENTER" text="Password:   " textAlignment="CENTER" HBox.hgrow="ALWAYS" />
-               <PasswordField />
+               <Label fx:id="welcomeText2" alignment="CENTER" text="Password:   " textAlignment="CENTER" textFill="#eaff4e" HBox.hgrow="ALWAYS" />
+               <PasswordField fx:id="txtPassword" />
             </children>
          </HBox>
          <HBox alignment="CENTER" prefWidth="200.0">
