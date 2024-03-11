@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.mau_javafx.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<AnchorPane fx:id="pnMain" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mau_javafx.HelloController">
+   <children>
+      <VBox fx:id="pnLogin" alignment="CENTER" spacing="20.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <Label text="Welcome">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+         <HBox prefWidth="200.0" VBox.vgrow="NEVER">
+            <children>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+                <Label fx:id="welcomeText" alignment="CENTER" text="User name: " textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+               <TextField />
+            </children>
+         </HBox>
+         <HBox layoutX="30.0" layoutY="85.0" prefWidth="200.0">
+            <children>
+               <Label fx:id="welcomeText2" alignment="CENTER" text="Password:   " textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+               <TextField />
+            </children>
+         </HBox>
+         <HBox prefWidth="200.0">
+            <children>
+               <Button mnemonicParsing="false" onAction="#onLogInClick" text="Sign In" textAlignment="CENTER" />
+            </children></HBox>
+      </VBox>
+   </children>
+</AnchorPane>
