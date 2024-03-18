@@ -27,13 +27,13 @@ public class HelloApplication extends Application {
 
         Scene scene = null;
         try {
-            scene = new Scene(l.load(), 400, 300);
+            scene = new Scene(l.load(), 500, 300);
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
 
         stage.setScene(scene);
-        stage.setTitle("TEST");
+        stage.setTitle("MIDTERMS");
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("hello.css")).toExternalForm());
         stage.setResizable(false);
         stage.show();

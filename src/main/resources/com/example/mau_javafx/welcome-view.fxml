@@ -3,9 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="pnLoggedIn" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mau_javafx.HelloController">
+<AnchorPane fx:id="pnLoggedIn" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mau_javafx.HelloController">
    <children>
-      <VBox fx:id="pnLogout" alignment="CENTER" prefHeight="300.0" prefWidth="400.0">
+      <VBox fx:id="pnLogout" alignment="CENTER" prefHeight="300.0" prefWidth="500.0">
          <children>
             <ColorPicker fx:id="cpPicker" />
             <Button mnemonicParsing="false" onAction="#onLogOutClick" text="Log Out" />

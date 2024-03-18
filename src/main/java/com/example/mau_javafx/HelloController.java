@@ -54,10 +54,6 @@ public class HelloController {
 
         if (username.length() == 0 || password.length() == 0) { return; }
 
-        System.out.println(username);
-        System.out.println(password);
-
-
 
         pnMain.getChildren().remove(pnLogin);
         pnMain.getChildren().add(root);
@@ -69,7 +65,7 @@ public class HelloController {
 
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(getClass().getResource("hello.css").getPath()));
-            bw.write(".root { -fx-background-image: url(\"bg.jpeg\"); }");
+            bw.write(".root { -fx-background-image: url(\"stars_bg.jpg\"); }");
             bw.newLine();
             bw.write(".button { -fx-background-color: #" + cpPicker.getValue().toString().substring(2, 8) + "; }");
             bw.close();

@@ -1,7 +1,3 @@
 .root {
-    -fx-background-image: url("bg.jpeg");
-}
-
-#signInBtn {
-    -fx-background-image: url("bg.jpeg");
+    -fx-background-image: url("stars_bg.jpg");
 }
